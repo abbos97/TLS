@@ -20,6 +20,6 @@ with socket.create_connection(('127.0.0.1', 8443)) as sock:
         print(response)
 
         if "403" in response:
-            print("❌ Sizga ruhsat berilmagan yoki ro‘yxatda yo‘qsiz.")
+            print("❌ You are not authorized or not registered.")
             ssock.close()
             exit()
